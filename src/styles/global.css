@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: rgb(151, 135, 243);
+  --color-secondary: rgb(105, 93, 165);
+  --color-deep: rgb(45, 39, 75);
+  --color-bg: rgb(234, 239, 254);
+  --color-text: rgb(45, 39, 75);
+
+  --font-title: "Play", sans-serif;
+  --font-body: "Mulish", sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  --color-bg: rgb(45, 39, 75);
+  --color-text: rgb(234, 239, 254);
+  color-scheme: dark;
+}

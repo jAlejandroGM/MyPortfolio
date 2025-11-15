@@ -1,10 +1,24 @@
 ---
-import Header from "../components/Header.astro";
+import AboutMe from "../components/sections/AboutMe.astro";
+import BeyondTech from "../components/sections/BeyondTech.astro";
+import Contact from "../components/sections/Contact.astro";
+import Education from "../components/sections/Education.astro";
+import Header from "../components/sections/Header.astro";
+import Projects from "../components/sections/Projects.astro";
+import Skills from "../components/sections/Skills.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <main class="w-full max-w-sm sm:max-w-xl md:max-w-3xl min-h-screen px-4 py-8">
+  <main
+    class="w-full max-w-sm min-h-screen p-4 sm:max-w-xl md:max-w-3xl lg:max-w-5xl"
+  >
     <Header />
+    <AboutMe />
+    <Skills />
+    <Projects />
+    <Education />
+    <BeyondTech />
+    <Contact />
   </main>
 </Layout>

@@ -1,0 +1,18 @@
+---
+import MainInfo from "../ui/MainInfo.astro";
+import Avatar from "./../ui/Avatar.astro";
+import LangBtn from "./../ui/LangBtn.astro";
+import ThemeBtn from "./../ui/ThemeBtn.astro";
+---
+
+<header class="flex flex-col items-center gap-8 md:gap-10 lg:gap-16">
+  <nav class="flex items-center justify-between w-full">
+    <span class="text-3xl font-bold font-title">alguzdev</span>
+    <LangBtn />
+    <ThemeBtn />
+  </nav>
+  <section class="flex flex-col items-center h-auto gap-4 md:flex-row md:gap-6">
+    <Avatar />
+    <MainInfo />
+  </section>
+</header>

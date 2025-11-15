@@ -1,10 +1,10 @@
 ---
 import { Picture } from "astro:assets";
-import miImagen from "../../assets/MyCartoonAvatar-nobg.png";
+import myAvatar from "../../assets/MyCartoonAvatar-nobg.png";
 ---
 
 <Picture
-  class="rounded-full bg-secondary border-8 border-primary size-32 md:size-56 shadow-black/30 shadow-lg"
-  src={miImagen}
+  class="object-cover transition-all duration-300 rounded-full shadow-lg border-10 bg-secondary border-primary size-40 md:size-52 lg:size-64 shadow-shadow/30 max-w-64 hover:scale-105"
+  src={myAvatar}
   alt="Alejandro Guzmán"
 />

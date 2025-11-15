@@ -1,0 +1,28 @@
+---
+import Github from "../../icons/Github.astro";
+import LinkedIn from "../../icons/LinkedIn.astro";
+import Whatsapp from "../../icons/Whatsapp.astro";
+import LinksBtn from "./LinksBtn.astro";
+---
+
+<div
+  class="flex flex-col items-center gap-2 text-center md:text-start md:gap-4 md:items-start"
+>
+  <h1 class="text-4xl font-bold md:text-5xl lg:text-7xl font-title">
+    Alejandro Guzmán
+  </h1>
+  <h2 class="text-xl opacity-70 font-body md:text-3xl lg:text-4xl">
+    Desarrollador Web Fullstack
+  </h2>
+  <nav class="flex items-center gap-2">
+    <LinksBtn href="https://www.linkedin.com/in/josealejandrogm/">
+      <LinkedIn class="size-full" />
+    </LinksBtn>
+    <LinksBtn href="https://github.com/jAlejandroGM">
+      <Github class="size-full" />
+    </LinksBtn>
+    <LinksBtn href="https://wa.me/51945472320">
+      <Whatsapp class="size-full" />
+    </LinksBtn>
+  </nav>
+</div>

@@ -20,3 +20,12 @@
   --color-text: rgb(234, 239, 254);
   color-scheme: dark;
 }
+
+.icon-moon,
+html.dark .icon-sun {
+  display: inline;
+}
+.icon-sun,
+html.dark .icon-moon {
+  display: none;
+}

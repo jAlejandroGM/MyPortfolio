@@ -14,6 +14,7 @@
 
 :root {
   color-scheme: light;
+  font-family: var(--font-body);
 }
 
 .dark {
@@ -21,6 +22,15 @@
   --color-text: rgb(234, 239, 254);
   --color-shadow: rgb(151, 135, 243);
   color-scheme: dark;
+}
+
+h1,
+h2 {
+  @apply font-title font-bold;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl lg:text-5xl;
 }
 
 .icon-moon,

@@ -1,0 +1,51 @@
+---
+import AstroIcon from "../../icons/logos/AstroIcon.astro";
+import Bootstrap from "../../icons/logos/Bootstrap.astro";
+import CSS from "../../icons/logos/CSS.astro";
+import Figma from "../../icons/logos/Figma.astro";
+import Flask from "../../icons/logos/Flask.astro";
+import Git from "../../icons/logos/Git.astro";
+import HTML from "../../icons/logos/HTML.astro";
+import Javascript from "../../icons/logos/Javascript.astro";
+import Jest from "../../icons/logos/Jest.astro";
+import JWT from "../../icons/logos/JWT.astro";
+import Nextjs from "../../icons/logos/Nextjs.astro";
+import PostgreSQL from "../../icons/logos/PostgreSQL.astro";
+import Postman from "../../icons/logos/Postman.astro";
+import Python from "../../icons/logos/Python.astro";
+import React from "../../icons/logos/React.astro";
+import Tailwind from "../../icons/logos/Tailwind.astro";
+import Vite from "../../icons/logos/Vite.astro";
+
+const logos = [
+  HTML,
+  CSS,
+  Javascript,
+  React,
+  Nextjs,
+  AstroIcon,
+  Bootstrap,
+  Tailwind,
+  Vite,
+  Figma,
+  Python,
+  Flask,
+  PostgreSQL,
+  Postman,
+  Git,
+  Jest,
+];
+---
+
+<section class="flex flex-col gap-4 md:gap-8">
+  <h2 class="">Skills</h2>
+  <div
+    class="grid grid-cols-4 gap-6 justify-items-center md:justify-items-normal"
+  >
+    {
+      logos.map((Logo) => (
+        <Logo class="size-10 md:size-11 lg:size-12 hover:scale-110 transition-all duration-300" />
+      ))
+    }
+  </div>
+</section>

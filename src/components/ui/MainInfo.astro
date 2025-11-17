@@ -1,4 +1,6 @@
 ---
+import CV from "../../icons/CV.astro";
+import Email from "../../icons/Email.astro";
 import Github from "../../icons/Github.astro";
 import LinkedIn from "../../icons/LinkedIn.astro";
 import Whatsapp from "../../icons/Whatsapp.astro";
@@ -8,21 +10,34 @@ import LinksBtn from "./LinksBtn.astro";
 <div
   class="flex flex-col items-center gap-4 text-center md:text-start md:items-start"
 >
-  <h1 class="text-4xl font-bold md:text-5xl lg:text-7xl font-title">
-    Alejandro Guzmán
-  </h1>
-  <h2 class="text-xl opacity-70 font-body md:text-3xl lg:text-4xl">
+  <h1 class="text-4xl md:text-5xl lg:text-6xl">Alejandro Guzmán</h1>
+  <h3 class="text-xl opacity-70 md:text-2xl lg:text-3xl">
     Desarrollador Web Fullstack
-  </h2>
-  <nav class="flex gap-4 md:gap-6">
-    <LinksBtn href="https://www.linkedin.com/in/josealejandrogm/">
+  </h3>
+  <nav class="flex gap-4 items-center" aria-label="Redes y contacto">
+    <LinksBtn
+      href="https://www.linkedin.com/in/josealejandrogm/"
+      aria-label="LinkedIn"
+    >
       <LinkedIn class="size-full" />
     </LinksBtn>
-    <LinksBtn href="https://github.com/jAlejandroGM">
+    <LinksBtn href="https://github.com/jAlejandroGM" aria-label="GitHub">
       <Github class="size-full" />
     </LinksBtn>
-    <LinksBtn href="https://wa.me/51945472320">
+    <LinksBtn
+      href="mailto:j.alejandro.guzman.m@gmail.com"
+      aria-label="Enviar correo electrónico"
+    >
+      <Email class="size-full" />
+    </LinksBtn>
+    <LinksBtn href="https://wa.me/51945472320" aria-label="WhatsApp">
       <Whatsapp class="size-full" />
+    </LinksBtn>
+    <LinksBtn
+      href="https://flowcv.com/resume/kfmsppk1lwtj"
+      aria-label="Ver currículum"
+    >
+      <CV class="size-full" />
     </LinksBtn>
   </nav>
 </div>

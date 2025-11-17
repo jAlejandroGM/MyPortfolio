@@ -11,12 +11,10 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
   <main
-    class="w-full max-w-sm min-h-screen p-4 sm:max-w-xl md:max-w-3xl lg:max-w-5xl flex flex-col gap-8 md:gap-16 lg:gap-24"
+    class="w-full max-w-md min-h-screen px-8 py-4 md:px-14 lg:px-18 xl:px-20 sm:max-w-xl md:max-w-3xl lg:max-w-5xl flex flex-col gap-8 md:gap-16 lg:gap-24 bg-bg"
   >
     <Header />
-    <div
-      class="grid grid-cols-1 gap-8 md:gap-16 md:grid-cols-2 lg:gap-24 xl:gap-36"
-    >
+    <div class="grid grid-cols-1 gap-8 md:gap-16 md:grid-cols-2 lg:gap-24">
       <AboutMe />
       <Skills />
     </div>

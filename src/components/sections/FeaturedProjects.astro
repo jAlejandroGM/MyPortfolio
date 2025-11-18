@@ -1,0 +1,24 @@
+---
+import ArrowRight from "../../icons/ArrowRight.astro";
+---
+
+<section class="flex flex-col gap-4 md:gap-8 mb-300">
+  <h2>Featured Projects</h2>
+  <article
+    class="bg-secondary text-light p-4 flex flex-col gap-4 shadow-lg shadow-black/70 rounded-2xl hover:shadow-2xl transition-all duration-300 hover:scale-101 hover:bg-primary"
+  >
+    <img class="rounded-xl" src="https://picsum.photos/400/200" alt="" />
+    <h4 class="font-title text-xl drop-shadow-lg drop-shadow-black/70">
+      Nombre
+    </h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed enim
+      officiis nam accusantium obcaecati!
+    </p>
+  </article>
+  <a
+    href="/projects"
+    class="flex items-center gap-1 rounded-3xl text-light bg-secondary px-4 py-2 shadow-lg shadow-black/50 hover:scale-105 transition-all duration-300 cursor-pointer mx-auto"
+    >Watch all my projects <ArrowRight class="size-6 inline-block" /></a
+  >
+</section>

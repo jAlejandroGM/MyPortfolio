@@ -1,9 +1,8 @@
 ---
 title: Modas Bety
-subtitle: Landing Page
-status: desarrollo
 image: null
 category: frontend
+status: ongoing
 stack: [Astro, Tailwind, Javascript]
 repo: https://github.com/jAlejandroGM/modasbety-landingpage
 link: https://modas-bety-landingpage.vercel.app/

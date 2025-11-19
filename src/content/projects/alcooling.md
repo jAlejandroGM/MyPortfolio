@@ -1,8 +1,8 @@
 ---
 title: Advanced Line Cooling
-status: desarrollo
 image: null
 category: frontend
+status: ongoing
 stack: [React, Vite, Bootstrap]
 repo: https://github.com/jAlejandroGM/advancedline-cooling-web
 link: null

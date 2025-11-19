@@ -1,9 +1,9 @@
 ---
 title: alpha
 subtitle: Plataforma educativa
-status: pausa
 image: null
 category: fullstack
+status: paused
 stack: [React, Bootstrap, Flask]
 repo: https://github.com/4GeeksAcademy/alpha
 link: null

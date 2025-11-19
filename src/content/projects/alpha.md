@@ -4,7 +4,7 @@ subtitle: Plataforma educativa
 image: null
 category: fullstack
 status: paused
-stack: [React, Bootstrap, Flask]
+stack: [React, Vite, Bootstrap, Flask]
 repo: https://github.com/4GeeksAcademy/alpha
 link: null
 featured: true

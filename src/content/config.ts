@@ -3,8 +3,7 @@ import { defineCollection, z } from "astro:content";
 const projects = defineCollection({
   schema: z.object({
     title: z.string(),
-    subtitle: z.string(),
-    type: z.enum(["academic", "professional", "profesional"]),
+    status: z.enum(["finalizado", "desarrollo", "pausa"]),
     image: z.string().nullable(),
     category: z.enum(["frontend", "backend", "fullstack"]),
     stack: z.array(z.string()),

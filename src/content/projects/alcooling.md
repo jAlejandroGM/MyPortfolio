@@ -1,7 +1,6 @@
 ---
 title: Advanced Line Cooling
-subtitle: Sitio Web Corporativo
-type: profesional
+status: desarrollo
 image: null
 category: frontend
 stack: [React, Vite, Bootstrap]
@@ -10,4 +9,4 @@ link: null
 featured: true
 ---
 
-Sitio web corporativo desarrollado para Advanced Line Cooling S.A.C., empresa dedicada a la venta y distribución de radiadores y sistemas de refrigeración para camiones de carga pesada e industrial.
+**_Sitio web corporativo_** para empresa de radiadores y sistemas de refrigeración para camiones.

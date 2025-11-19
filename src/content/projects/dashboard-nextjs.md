@@ -1,7 +1,6 @@
 ---
-title: Dashboard
-subtitle: Next.js 16
-type: academic
+title: Dashboard — curso Next.js
+status: pausa
 image: null
 category: fullstack
 stack: [Next.js, Tailwind, React, Typescript]
@@ -10,4 +9,4 @@ link: https://dashboard-next-js-course.vercel.app/
 featured: true
 ---
 
-Dashboard de práctica con Next.js 16 (App Router).
+**_Proyecto académico_** del curso oficial de Next.js.

@@ -1,13 +1,13 @@
 ---
 title: alpha
 subtitle: Plataforma educativa
-type: academic
 image: null
 category: fullstack
+status: paused
 stack: [React, Bootstrap, Flask]
 repo: https://github.com/4GeeksAcademy/alpha
 link: null
 featured: true
 ---
 
-Plataforma educativa para colegio de nivel primaria con funcionalidades adaptadas a administradores, docentes y alumnos, como gestión de perfiles, horarios, notas, y navegación diferenciada según el tipo de usuario.
+**_Maqueta de plataforma escolar_** diseñado para el manejo de notas, asistencias y horarios de alumnos y maestros.

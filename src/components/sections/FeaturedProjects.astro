@@ -3,15 +3,17 @@ import ArrowRight from "../../icons/ArrowRight.astro";
 import ProjectCard from "../ui/ProjectCard.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 
-const projects = await getCollection(
-  "projects",
-  (entry: CollectionEntry<"projects">) => entry.data.featured === true
-);
+const projects = (
+  await getCollection(
+    "projects",
+    (entry: CollectionEntry<"projects">) => entry.data.featured === true
+  )
+).sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
 ---
 
 <section class="flex flex-col gap-4 md:gap-8 mb-32">
   <h2>Featured Projects</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 items-center">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
     {projects.map((p: any) => <ProjectCard project={p} />)}
   </div>
   <!-- <a

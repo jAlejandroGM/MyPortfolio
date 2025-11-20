@@ -8,7 +8,6 @@ import Git from "../../icons/logos/Git.astro";
 import HTML from "../../icons/logos/HTML.astro";
 import Javascript from "../../icons/logos/Javascript.astro";
 import Jest from "../../icons/logos/Jest.astro";
-import JWT from "../../icons/logos/JWT.astro";
 import Nextjs from "../../icons/logos/Nextjs.astro";
 import PostgreSQL from "../../icons/logos/PostgreSQL.astro";
 import Postman from "../../icons/logos/Postman.astro";
@@ -18,22 +17,22 @@ import Tailwind from "../../icons/logos/Tailwind.astro";
 import Vite from "../../icons/logos/Vite.astro";
 
 const logos = [
-  HTML,
-  CSS,
-  Javascript,
-  React,
-  Nextjs,
-  AstroIcon,
-  Bootstrap,
-  Tailwind,
-  Vite,
-  Figma,
-  Python,
-  Flask,
-  PostgreSQL,
-  Postman,
-  Git,
-  Jest,
+  { component: HTML, name: "HTML" },
+  { component: CSS, name: "CSS" },
+  { component: Javascript, name: "Javascript" },
+  { component: React, name: "React" },
+  { component: Nextjs, name: "Next.js" },
+  { component: AstroIcon, name: "Astro" },
+  { component: Bootstrap, name: "Bootstrap" },
+  { component: Tailwind, name: "TailwindCSS" },
+  { component: Vite, name: "Vite" },
+  { component: Figma, name: "Figma" },
+  { component: Python, name: "Python" },
+  { component: Flask, name: "Flask" },
+  { component: PostgreSQL, name: "PostgreSQL" },
+  { component: Postman, name: "Postman" },
+  { component: Git, name: "Git" },
+  { component: Jest, name: "Jest" },
 ];
 ---
 
@@ -43,8 +42,10 @@ const logos = [
     class="grid grid-cols-4 gap-6 justify-items-center md:justify-items-normal"
   >
     {
-      logos.map((Logo) => (
-        <Logo class="size-10 md:size-11 lg:size-12 hover:scale-120 transition-all duration-300 drop-shadow-lg drop-shadow-black/70" />
+      logos.map(({ component: Logo, name }) => (
+        <span title={name} class="inline-block">
+          <Logo class="size-10 md:size-11 lg:size-12 hover:scale-120 transition-all duration-300 drop-shadow-lg drop-shadow-black/70" />
+        </span>
       ))
     }
   </div>

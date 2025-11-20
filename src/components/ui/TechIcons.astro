@@ -1,0 +1,42 @@
+---
+import ReactLogo from "../../icons/logos/React.astro";
+import JSLogo from "../../icons/logos/Javascript.astro";
+import AstroLogo from "../../icons/logos/AstroIcon.astro";
+import PythonLogo from "../../icons/logos/Python.astro";
+import FlaskLogo from "../../icons/logos/Flask.astro";
+import BootstrapLogo from "../../icons/logos/Bootstrap.astro";
+import TailwindLogo from "../../icons/logos/Tailwind.astro";
+import NextJSLogo from "../../icons/logos/Nextjs.astro";
+import PostgresLogo from "../../icons/logos/PostgreSQL.astro";
+import TypescriptLogo from "../../icons/logos/Typescript.astro";
+
+const { stack } = Astro.props;
+
+const iconMap = {
+  React: ReactLogo,
+  Javascript: JSLogo,
+  Astro: AstroLogo,
+  Python: PythonLogo,
+  Flask: FlaskLogo,
+  Bootstrap: BootstrapLogo,
+  TailwindCSS: TailwindLogo,
+  "Next.js": NextJSLogo,
+  PostgreSQL: PostgresLogo,
+  Typescript: TypescriptLogo,
+};
+---
+
+<ul
+  class="flex gap-2 bg-deep/30 px-2 py-1.5 md:px-3 md:py-2 rounded-full w-fit"
+>
+  {
+    stack.map((tech: string) => {
+      const Icon = iconMap[tech as keyof typeof iconMap];
+      return Icon ? (
+        <li title={tech}>
+          <Icon class="size-4 md:size-6" />
+        </li>
+      ) : null;
+    })
+  }
+</ul>

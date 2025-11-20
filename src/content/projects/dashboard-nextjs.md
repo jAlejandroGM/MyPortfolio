@@ -1,7 +1,7 @@
 ---
 title: Dashboard — curso Next.js
 subtitle: Proyecto académico
-image: null
+image: /images/next.js-dashboard.webp
 category: fullstack
 status: paused
 stack: [Next.js, Typescript, TailwindCSS, PostgreSQL]

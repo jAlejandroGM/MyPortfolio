@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import ExternalLink from "../../icons/ExternalLink.astro";
 
 const { image, title, link } = Astro.props;
@@ -10,11 +11,7 @@ const { image, title, link } = Astro.props;
   target="_blank"
   rel="noopener noreferrer"
 >
-  <img
-    class="size-full object-cover rounded-t-xl"
-    src={image ?? "https://picsum.photos/400/200"}
-    alt={title}
-  />
+  <img class="size-full object-cover rounded-t-xl" src={image} alt={title} />
   {
     link && (
       <span class="absolute rounded-t-xl inset-0 flex items-center justify-center group-hover:bg-black/60 opacity-70 lg:opacity-50 group-hover:opacity-100 transition-opacity duration-300">

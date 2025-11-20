@@ -1,7 +1,7 @@
 ---
 title: Advanced Line Cooling
 subtitle: Sitio Web Corporativo
-image: null
+image: /images/alcooling.webp
 category: frontend
 status: ongoing
 stack: [React, Bootstrap]

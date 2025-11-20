@@ -1,82 +1,46 @@
 ---
 import Github from "../../icons/Github.astro";
-import Check from "../../icons/Check.astro";
-import Wrench from "../../icons/Wrench.astro";
-import Pause from "../../icons/Pause.astro";
-import ExternalLink from "../../icons/ExternalLink.astro";
+import TechIcons from "./TechIcons.astro";
+import CardImage from "./CardImage.astro";
+import ProjectStatus from "./ProjectStatus.astro";
+import ProjectCategory from "./ProjectCategory.astro";
 
 const { project } = Astro.props;
-const { title, status, category, stack, repo, link, image } = project.data;
+const { title, subtitle, status, category, stack, repo, link, image } =
+  project.data;
 
 const { Content } = await project.render();
 ---
 
 <article
-  class="bg-secondary hover:-translate-y-1 text-light flex flex-col shadow-lg shadow-black/70 rounded-2xl transition-all duration-300 max-w-xs lg:max-w-sm mx-auto h-110"
+  class="bg-secondary hover:-translate-y-1 text-light flex flex-col shadow-lg shadow-black/70 rounded-2xl transition-all duration-300 max-w-xs lg:max-w-sm mx-auto min-h-80 md:h-110"
 >
-  <a
-    href={link}
-    class="relative group block rounded-t-xl overflow-hidden h-full"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img
-      class="w-full h-full object-cover"
-      src={image ?? "https://picsum.photos/400/200"}
-      alt={title}
-    />
-    <span
-      class="absolute inset-0 flex items-center justify-center bg-black/60 opacity-50 lg:opacity-30 group-hover:opacity-100 transition-opacity duration-300"
-    >
-      <ExternalLink class="size-8" />
-    </span>
-  </a>
-
-  <div class="flex flex-col justify-between h-full py-4 px-8">
+  <CardImage image={image} title={title} link={link} />
+  <div class="flex flex-col justify-between h-full p-3 md:p-4 md:px-8">
     <div class="flex flex-col gap-2">
-      <h4 class="font-title text-xl drop-shadow-lg drop-shadow-black/70">
+      <h4
+        class="font-title text-lg md:text-xl drop-shadow-lg drop-shadow-black/70"
+      >
         {title}
       </h4>
-      <div class="flex flex-wrap gap-2 items-center">
-        {
-          (() => {
-            const s = String(status ?? "").toLowerCase();
-            if (s === "paused") {
-              return (
-                <span title="En pausa" class="inline-block">
-                  <Pause class="size-6 text-cyan-300 drop-shadow-md drop-shadow-black/70" />
-                </span>
-              );
-            }
-            if (s === "ongoing") {
-              return (
-                <span title="En desarrollo" class="inline-block">
-                  <Wrench class="size-6 text-yellow-300 drop-shadow-md drop-shadow-black/70" />
-                </span>
-              );
-            }
-            if (s === "completed") {
-              return (
-                <span title="Finalizado" class="inline-block">
-                  <Check class="size-6 text-green-500 drop-shadow-md drop-shadow-black/70" />
-                </span>
-              );
-            }
-            return null;
-          })()
-        }
-        <span
-          class="text-sm bg-deep/30 px-3 py-1 rounded-full backdrop-blur-md capitalize"
-        >
-          {category}
-        </span>
+      <div class="flex gap-2 items-center">
+        <ProjectStatus status={status} />
+        <ProjectCategory category={category} />
+      </div>
+      <h6 class="text-sm md:text-base md:hidden font-bold italic">
+        {subtitle}
+      </h6>
+      <div class="text-sm md:text-base hidden md:block">
         <Content />
       </div>
     </div>
-    <a class="ml-auto" href={repo} target="_blank" rel="noopener noreferrer">
-      <Github
-        class="size-9 lg:size-11 cursor-pointer hover:text-primary transition-all duration-300 drop-shadow-lg drop-shadow-black/70"
-      />
-    </a>
+    <div class="flex items-center justify-between">
+      <TechIcons stack={stack} />
+      <a href={repo} target="_blank" rel="noopener noreferrer">
+        <Github
+          class="size-8 lg:size-11 cursor-pointer hover:text-primary transition-all duration-300 drop-shadow-lg drop-shadow-black/70"
+        />
+      </a>
+    </div>
   </div>
 </article>

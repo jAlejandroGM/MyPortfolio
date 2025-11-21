@@ -23,36 +23,37 @@ const experiences = [
 ];
 ---
 
-<section class="space-y-6">
-  <div class="space-y-2">
+<section class="space-y-4 md:space-y-8">
+  <div class="space-y-2 md:space-y-6">
     <h2>Education</h2>
-    <p class="text-text">
+    <p>
       Actualmente me encuentro estudiando de forma autodidacta, reforzando y
       ampliando los conocimientos que he adquirido durante mi formación
       académica, la cual es la siguiente:
     </p>
   </div>
-  <div>
-    <ol
-      class="relative space-y-8 before:absolute before:-ml-px before:h-full before:w-0.5 before:rounded-full before:bg-text"
-    >
-      {
-        experiences.map((exp) => (
-          <li class=" relative -ms-1.5 flex items-start gap-4">
-            <span class="size-3 shrink-0 rounded-full bg-primary" />
 
-            <div class="-mt-2">
-              <time class="text-xs/none font-medium text-text/90">
-                {exp.date}
-              </time>
+  <ol
+    class="relative space-y-8 before:absolute before:-ml-px before:h-full before:w-0.5 before:rounded-full before:bg-text"
+  >
+    {
+      experiences.map((exp) => (
+        <li class=" relative -ms-1.5 flex items-start gap-4">
+          <span class="size-3 shrink-0 rounded-full bg-primary" />
 
-              <h3 class="md:text-lg font-bold text-text">{exp.title}</h3>
+          <div class="-mt-2">
+            <time class="text-xs/none font-medium text-text/90">
+              {exp.date}
+            </time>
 
-              <p class="mt-0.5 text-sm text-text/90">{exp.institution}</p>
-            </div>
-          </li>
-        ))
-      }
-    </ol>
-  </div>
+            <h3 class="md:text-lg font-bold text-text drop-shadow-lg drop-shadow-black/50">
+              {exp.title}
+            </h3>
+
+            <p class="mt-0.5 text-sm text-text/90">{exp.institution}</p>
+          </div>
+        </li>
+      ))
+    }
+  </ol>
 </section>

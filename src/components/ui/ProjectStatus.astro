@@ -11,22 +11,43 @@ const { status } = Astro.props;
     const s = String(status ?? "").toLowerCase();
     if (s === "paused") {
       return (
-        <span title="En pausa" class="inline-block">
-          <Pause class="size-5 md:size-6 text-orange-400 drop-shadow-md drop-shadow-black/70" />
+        <span
+          title="En pausa"
+          class="inline-block"
+          aria-label="Proyecto en pausa"
+        >
+          <Pause
+            class="size-5 md:size-6 text-orange-400 drop-shadow-md drop-shadow-black/70"
+            aria-hidden="true"
+          />
         </span>
       );
     }
     if (s === "ongoing") {
       return (
-        <span title="En desarrollo" class="inline-block">
-          <Wrench class="size-5 md:size-6 text-yellow-300 drop-shadow-md drop-shadow-black/70" />
+        <span
+          title="En desarrollo"
+          class="inline-block"
+          aria-label="Proyecto en desarrollo"
+        >
+          <Wrench
+            class="size-5 md:size-6 text-yellow-300 drop-shadow-md drop-shadow-black/70"
+            aria-hidden="true"
+          />
         </span>
       );
     }
     if (s === "completed") {
       return (
-        <span title="Finalizado" class="inline-block">
-          <Check class="size-5 md:size-6 text-green-500 drop-shadow-md drop-shadow-black/70" />
+        <span
+          title="Finalizado"
+          class="inline-block"
+          aria-label="Proyecto finalizado"
+        >
+          <Check
+            class="size-5 md:size-6 text-green-500 drop-shadow-md drop-shadow-black/70"
+            aria-hidden="true"
+          />
         </span>
       );
     }

@@ -36,9 +36,15 @@ const { Content } = await project.render();
     </div>
     <div class="flex items-center justify-between">
       <TechIcons stack={stack} />
-      <a href={repo} target="_blank" rel="noopener noreferrer">
+      <a
+        href={repo}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Abrir repositorio en GitHub del proyecto ${title}`}
+      >
         <Github
           class="size-8 lg:size-11 cursor-pointer hover:text-primary transition-all duration-300 drop-shadow-lg drop-shadow-black/70"
+          aria-hidden="true"
         />
       </a>
     </div>

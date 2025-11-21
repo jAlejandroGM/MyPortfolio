@@ -13,30 +13,35 @@ import LinksMenu from "../ui/LinksMenu.astro";
         Estoy abierto a nuevas oportunidades. Si te interesa colaborar o
         conversar, puedes contactarme aquí:
       </p>
-      <ul class="space-y-2">
+      <ul class="space-y-2" aria-label="Información de contacto">
         <li class="flex gap-2">
-          <Phone class="size-6" /><span
-            class="drop-shadow-lg drop-shadow-black/50">+51 945 472 320</span
-          >
-        </li>
-        <li class="flex gap-2">
-          <Email class="size-6" /><span
+          <Phone class="size-6" aria-hidden="true" /><a
+            href="tel:+51945472320"
             class="drop-shadow-lg drop-shadow-black/50"
-            >j.alejandro.guzman.m@gmail.com</span
+            aria-label="Llamar al número +51 945 472 320">+51 945 472 320</a
           >
         </li>
         <li class="flex gap-2">
-          <LocationIcon class="size-6" /><span
-            class="drop-shadow-lg drop-shadow-black/50">Lima, Perú</span
+          <Email class="size-6" aria-hidden="true" /><a
+            href="mailto:j.alejandro.guzman.m@gmail.com"
+            class="drop-shadow-lg drop-shadow-black/50"
+            aria-label="Enviar correo a j.alejandro.guzman.m@gmail.com"
+            >j.alejandro.guzman.m@gmail.com</a
+          >
+        </li>
+        <li class="flex gap-2">
+          <LocationIcon class="size-6" aria-hidden="true" /><span
+            class="drop-shadow-lg drop-shadow-black/50"
+            aria-label="Ubicación Lima, Perú">Lima, Perú</span
           >
         </li>
       </ul>
     </div>
-    <div class="flex flex-col items-center gap-4">
+    <div class="flex flex-col items-center gap-4 lg:gap-6">
       <img
         class="size-32 lg:size-42 lg:-mt-12 bg-deep shadow-lg shadow-black/60"
         src="/qrcode.svg"
-        alt="Whatsapp QR code"
+        alt="Código QR para abrir conversación de WhatsApp"
       />
       <LinksMenu />
     </div>

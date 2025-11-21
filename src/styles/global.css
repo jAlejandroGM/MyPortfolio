@@ -7,6 +7,7 @@
   --color-light: rgb(234, 239, 254);
   --color-bg: rgb(234, 239, 254);
   --color-text: rgb(45, 39, 75);
+  --color-qr: rgb(105, 93, 165);
 
   --font-title: "Play", sans-serif;
   --font-body: "Mulish", sans-serif;
@@ -20,12 +21,13 @@
 .dark {
   --color-bg: rgb(45, 39, 75);
   --color-text: rgb(234, 239, 254);
+  --color-qr: rgb(234, 239, 254);
   color-scheme: dark;
 }
 
 h1,
 h2 {
-  @apply font-title font-bold drop-shadow-lg drop-shadow-black/70;
+  @apply font-title font-bold drop-shadow-lg drop-shadow-black/50;
 }
 
 h2 {

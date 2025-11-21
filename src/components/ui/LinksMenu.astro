@@ -1,0 +1,36 @@
+---
+import CV from "../../icons/CV.astro";
+import Email from "../../icons/Email.astro";
+import Github from "../../icons/Github.astro";
+import LinkedIn from "../../icons/LinkedIn.astro";
+import Whatsapp from "../../icons/Whatsapp.astro";
+import LinksBtn from "./LinksBtn.astro";
+---
+
+<nav class="flex gap-4 items-center" aria-label="Redes y contacto">
+  <LinksBtn
+    href="https://www.linkedin.com/in/josealejandrogm/"
+    aria-label="LinkedIn"
+  >
+    <LinkedIn class="size-full" />
+  </LinksBtn>
+  <LinksBtn href="https://github.com/jAlejandroGM" aria-label="GitHub">
+    <Github class="size-full" />
+  </LinksBtn>
+  <LinksBtn
+    href="mailto:j.alejandro.guzman.m@gmail.com"
+    aria-label="Enviar correo electrónico"
+  >
+    <Email class="size-full" />
+  </LinksBtn>
+  <LinksBtn href="https://wa.me/51945472320" aria-label="WhatsApp">
+    <Whatsapp class="size-full" />
+  </LinksBtn>
+  <LinksBtn
+    href="https://flowcv.com/resume/kfmsppk1lwtj"
+    title="Abrir CV en una nueva pestaña"
+    aria-label="Ver currículum"
+  >
+    <CV class="size-full" />
+  </LinksBtn>
+</nav>

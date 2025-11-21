@@ -1,10 +1,10 @@
 ---
 title: alpha
 subtitle: Plataforma escolar
-image: null
+image: /images/alpha.webp
 category: fullstack
 status: paused
-stack: [React, Bootstrap, Python, Flask, PostgreSQL]
+stack: [React, Bootstrap, Python, Flask, SQLAlchemy, PostgreSQL]
 repo: https://github.com/4GeeksAcademy/alpha
 link: null
 featured: true

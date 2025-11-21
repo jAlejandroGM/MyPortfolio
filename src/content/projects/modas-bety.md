@@ -1,7 +1,7 @@
 ---
 title: Modas Bety
 subtitle: Landing Page
-image: null
+image: /images/modas-bety.webp
 category: frontend
 status: ongoing
 stack: [Astro, Javascript, TailwindCSS]

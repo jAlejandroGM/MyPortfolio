@@ -1,35 +1,35 @@
 ---
+const { t } = Astro.props;
+
 const experiences = [
   {
-    title: "Computación e Informática (3 ciclos)",
+    title: t.education.exp.computacion.title,
     institution: "Cibertec",
     date: "09/2024 - 08/2025",
   },
   {
-    title: "Bootcamp Full-Stack Software Development",
+    title: t.education.exp.bootcamp.title,
     institution: "4Geeks Academy",
     date: "03/2025 - 06/2025",
   },
   {
-    title: "Curso Figma and No-Code",
+    title: t.education.exp.figma.title,
     institution: "Codigo by Tecsup",
     date: "09/2025 - 10/2025",
   },
   {
-    title: "Ingeniería de Software",
+    title: t.education.exp.ingenieria.title,
     institution: "UTP",
-    date: " Inicio: 03/2026",
+    date: t.education.exp.ingenieria.date,
   },
 ];
 ---
 
 <section class="space-y-4 md:space-y-8">
   <div class="space-y-2 md:space-y-6">
-    <h2>Education</h2>
+    <h2>{t.education.heading}</h2>
     <p>
-      Actualmente me encuentro estudiando de forma autodidacta, reforzando y
-      ampliando los conocimientos que he adquirido durante mi formación
-      académica, la cual es la siguiente:
+      {t.education.description}
     </p>
   </div>
 

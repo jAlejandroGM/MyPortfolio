@@ -5,41 +5,43 @@ import Github from "../../icons/Github.astro";
 import LinkedIn from "../../icons/LinkedIn.astro";
 import Whatsapp from "../../icons/Whatsapp.astro";
 import LinksBtn from "./LinksBtn.astro";
+
+const { t } = Astro.props;
 ---
 
 <nav
   class="flex gap-4 items-center"
-  aria-label="Redes y contacto"
+  aria-label={t["links-menu"].aria}
   role="navigation"
 >
   <LinksBtn
     href="https://www.linkedin.com/in/josealejandrogm/"
-    aria-label="Perfil en LinkedIn de Alejandro Guzmán"
+    aria-label={t["links-menu"].linkedin}
   >
     <LinkedIn class="size-full" aria-hidden="true" />
   </LinksBtn>
   <LinksBtn
     href="https://github.com/jAlejandroGM"
-    aria-label="Perfil en GitHub de Alejandro Guzmán"
+    aria-label={t["links-menu"].github}
   >
     <Github class="size-full" aria-hidden="true" />
   </LinksBtn>
   <LinksBtn
     href="mailto:j.alejandro.guzman.m@gmail.com"
-    aria-label="Enviar correo a j.alejandro.guzman.m@gmail.com"
+    aria-label={t["links-menu"].email}
   >
     <Email class="size-full" aria-hidden="true" />
   </LinksBtn>
   <LinksBtn
     href="https://wa.me/51945472320"
-    aria-label="Abrir chat de WhatsApp con Alejandro Guzmán"
+    aria-label={t["links-menu"].whatsapp}
   >
     <Whatsapp class="size-full" aria-hidden="true" />
   </LinksBtn>
   <LinksBtn
     href="https://flowcv.com/resume/kfmsppk1lwtj"
-    title="Abrir CV en una nueva pestaña"
-    aria-label="Ver currículum en FlowCV"
+    title={t["links-menu"].cv.title}
+    aria-label={t["links-menu"].cv.aria}
   >
     <CV class="size-full" aria-hidden="true" />
   </LinksBtn>

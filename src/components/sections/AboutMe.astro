@@ -1,12 +1,10 @@
+---
+const { t } = Astro.props;
+---
+
 <section class="space-y-2 md:space-y-6">
-  <h2>About Me</h2>
+  <h2>{t["about-me"].heading}</h2>
   <p class="leading-relaxed">
-    Apasionado por la tecnología y por todo lo que puedo crear con ella. Me
-    involucro intensamente en cada proyecto, busco crear interfaces impecables y
-    funcionalidades sólidas que reflejen un trabajo preciso y meticuloso. Tengo
-    un enfoque práctico y me adapto con rapidez, lo que me permite mejorar y
-    pulir cada detalle sin perder ritmo. Mi pasión y el deseo de ser el mejor en
-    lo que hago me impulsan a aportar el máximo valor en proyectos que me reten
-    y generen un impacto real.
+    {t["about-me"].paragraph}
   </p>
 </section>

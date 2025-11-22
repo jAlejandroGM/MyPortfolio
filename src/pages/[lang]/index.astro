@@ -1,0 +1,40 @@
+---
+import AboutMe from "../../components/sections/AboutMe.astro";
+import BeyondTech from "../../components/sections/BeyondTech.astro";
+import Contact from "../../components/sections/Contact.astro";
+import Education from "../../components/sections/Education.astro";
+import FeaturedProjects from "../../components/sections/FeaturedProjects.astro";
+import Hero from "../../components/sections/Hero.astro";
+import Skills from "../../components/sections/Skills.astro";
+import Layout from "../../layouts/Layout.astro";
+import es from "../../i18n/es";
+import en from "../../i18n/en";
+import type { Language } from "../../types/language.type";
+
+export function getStaticPaths() {
+  return [{ params: { lang: "es" } }, { params: { lang: "en" } }];
+}
+
+export const defaultRedirect = "/es";
+const lang = Astro.params.lang as Language;
+const translation = { es, en };
+const t = translation[lang];
+---
+
+<Layout lang={lang} t={t}>
+  <main
+    class="w-full max-w-md min-h-screen px-8 pt-4 pb-16 md:px-14 lg:px-18 xl:px-20 sm:max-w-xl md:max-w-3xl lg:max-w-5xl flex flex-col gap-8 md:gap-16 lg:gap-24 bg-bg"
+  >
+    <Hero t={t} />
+    <div class="grid grid-cols-1 gap-8 md:gap-14 md:grid-cols-2 lg:gap-20">
+      <AboutMe t={t} />
+      <Skills t={t} />
+    </div>
+    <FeaturedProjects lang={lang} t={t} />
+    <div class="grid grid-cols-1 gap-8 md:gap-14 md:grid-cols-2 lg:gap-20">
+      <Education t={t} />
+      <BeyondTech t={t} />
+    </div>
+    <Contact t={t} />
+  </main>
+</Layout>

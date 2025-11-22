@@ -5,7 +5,7 @@ import CardImage from "./CardImage.astro";
 import ProjectStatus from "./ProjectStatus.astro";
 import ProjectCategory from "./ProjectCategory.astro";
 
-const { project } = Astro.props;
+const { t, project } = Astro.props;
 const { title, subtitle, status, category, stack, repo, link, image } =
   project.data;
 
@@ -24,10 +24,10 @@ const { Content } = await project.render();
         {title}
       </h4>
       <div class="flex gap-2 items-center">
-        <ProjectStatus status={status} />
+        <ProjectStatus status={status} t={t} />
         <ProjectCategory category={category} />
       </div>
-      <h6 class="text-sm md:text-base md:hidden font-bold italic">
+      <h6 class="text-sm md:text-base md:hidden font-bold">
         {subtitle}
       </h6>
       <div class="text-sm md:text-base hidden md:block">

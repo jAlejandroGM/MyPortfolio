@@ -3,7 +3,7 @@ import Check from "../../icons/Check.astro";
 import Wrench from "../../icons/Wrench.astro";
 import Pause from "../../icons/Pause.astro";
 
-const { status } = Astro.props;
+const { t, status } = Astro.props;
 ---
 
 {
@@ -12,9 +12,9 @@ const { status } = Astro.props;
     if (s === "paused") {
       return (
         <span
-          title="En pausa"
+          title={t["project-status"].paused.title}
           class="inline-block"
-          aria-label="Proyecto en pausa"
+          aria-label={t["project-status"].paused.aria}
         >
           <Pause
             class="size-5 md:size-6 text-orange-400 drop-shadow-md drop-shadow-black/70"
@@ -26,9 +26,9 @@ const { status } = Astro.props;
     if (s === "ongoing") {
       return (
         <span
-          title="En desarrollo"
+          title={t["project-status"].ongoing.title}
           class="inline-block"
-          aria-label="Proyecto en desarrollo"
+          aria-label={t["project-status"].ongoing.aria}
         >
           <Wrench
             class="size-5 md:size-6 text-yellow-300 drop-shadow-md drop-shadow-black/70"
@@ -40,9 +40,9 @@ const { status } = Astro.props;
     if (s === "completed") {
       return (
         <span
-          title="Finalizado"
+          title={t["project-status"].completed.title}
           class="inline-block"
-          aria-label="Proyecto finalizado"
+          aria-label={t["project-status"].completed.aria}
         >
           <Check
             class="size-5 md:size-6 text-green-500 drop-shadow-md drop-shadow-black/70"

@@ -16,17 +16,16 @@ const { t } = Astro.props;
       </p>
       <ul class="space-y-2" aria-label="Información de contacto">
         <li class="flex gap-2">
-          <Phone class="size-6" aria-hidden="true" /><a
-            href="tel:+51945472320"
+          <Phone class="size-6" aria-hidden="true" /><span
             class="drop-shadow-lg drop-shadow-black/50"
-            aria-label={t.contact.phone.aria}>+51 945 472 320</a
+            aria-label={t.contact.phone.aria}>+51 945 472 320</span
           >
         </li>
         <li class="flex gap-2">
-          <Email class="size-6" aria-hidden="true" /><a
-            href="mailto:j.alejandro.guzman.m@gmail.com"
+          <Email class="size-6" aria-hidden="true" /><span
             class="drop-shadow-lg drop-shadow-black/50"
-            aria-label={t.contact.email.aria}>j.alejandro.guzman.m@gmail.com</a
+            aria-label={t.contact.email.aria}
+            >j.alejandro.guzman.m@gmail.com</span
           >
         </li>
         <li class="flex gap-2">
@@ -40,7 +39,7 @@ const { t } = Astro.props;
     </div>
     <div class="flex flex-col items-center gap-4 lg:gap-6">
       <img
-        class="size-32 lg:size-42 lg:-mt-12 bg-deep shadow-lg shadow-black/60"
+        class="size-32 lg:size-42 lg:-mt-12 bg-deep shadow-lg shadow-black/60 hover:scale-105 transition-all duration-300"
         src="/qrcode.svg"
         alt={t.contact.qrcode.alt}
       />

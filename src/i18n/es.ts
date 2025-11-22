@@ -68,7 +68,7 @@ export default {
     },
   },
   "beyond-tech": {
-    heading: "Más allá del código",
+    heading: "Fuera del Código",
     article: {
       esports: {
         title: "Experiencia competitiva en eSports",

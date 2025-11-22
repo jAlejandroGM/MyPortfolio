@@ -1,5 +1,6 @@
 ---
 import LinksMenu from "./LinksMenu.astro";
+const { t } = Astro.props;
 ---
 
 <div
@@ -7,7 +8,7 @@ import LinksMenu from "./LinksMenu.astro";
 >
   <h1 class="text-4xl md:text-5xl lg:text-6xl">Alejandro Guzmán</h1>
   <h3 class="text-xl opacity-70 md:text-2xl lg:text-3xl">
-    Desarrollador Web Fullstack
+    {t["main-info"].title}
   </h3>
-  <LinksMenu />
+  <LinksMenu t={t} />
 </div>

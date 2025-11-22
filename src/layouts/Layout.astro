@@ -1,10 +1,17 @@
 ---
 import Header from "../components/sections/Header.astro";
 import "../styles/global.css";
+
+const { lang, t } = Astro.props;
+
+const languages = [
+  { code: "es", label: t.languageOption.es },
+  { code: "en", label: t.languageOption.en },
+];
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -21,7 +28,9 @@ import "../styles/global.css";
     <title>Alejandro Guzmán Portfolio</title>
   </head>
   <body class="flex flex-col items-center bg-neutral-900 text-text">
-    <Header />
-    <slot />
+    <Header t={t} />
+    <main>
+      <slot />
+    </main>
   </body>
 </html>

@@ -34,17 +34,23 @@ const logos = [
   { component: Git, name: "Git" },
   { component: Jest, name: "Jest" },
 ];
+
+const { t } = Astro.props;
 ---
 
 <section class="flex flex-col gap-4 md:gap-8">
-  <h2>Skills</h2>
+  <h2>{t.skills.heading}</h2>
   <div
     class="grid grid-cols-4 gap-6 justify-items-center md:justify-items-normal"
   >
     {
       logos.map(({ component: Logo, name }) => (
         <span title={name} class="inline-block">
-          <Logo class="size-10 md:size-11 lg:size-12 hover:scale-120 transition-all duration-300 drop-shadow-lg drop-shadow-black/70" />
+          <Logo
+            class="size-10 md:size-11 lg:size-12 hover:scale-120 transition-all duration-300 drop-shadow-lg drop-shadow-black/70"
+            role="img"
+            aria-label={name}
+          />
         </span>
       ))
     }

@@ -1,36 +1,35 @@
 ---
+const { t } = Astro.props;
+
 const articles = [
   {
-    title: "Experiencia competitiva en eSports",
-    content:
-      "Fui jugador profesional de Dota 2 y más adelante coach y analista para equipos en formación. Esta etapa me dio experiencia real guiando personas, comunicando bajo presión y tomando decisiones rápidas en contextos competitivos.",
+    title: t["beyond-tech"].article.esports.title,
+    content: t["beyond-tech"].article.esports.content,
   },
   {
-    title: "Vida entre mascotas rescatadas",
-    content:
-      "Convivo con nueve mascotas, ocho de ellas rescatadas. Cuidarlas ha sido una parte importante de mi vida y me ha enseñado a ser constante, paciente y responsable de una forma muy natural.",
+    title: t["beyond-tech"].article.pets.title,
+    content: t["beyond-tech"].article.pets.content,
   },
   {
-    title: "Comunicación internacional",
-    content:
-      "Cuento con nivel C1 de inglés y he trabajado como intermediario y traductor para una empresa, facilitando comunicación técnica y coordinación con proveedores internacionales. Además, durante mi etapa en eSports competí y colaboré con equipos de habla inglesa, lo que reforzó mi capacidad de comunicarme con claridad en distintos contextos.",
+    title: t["beyond-tech"].article.english.title,
+    content: t["beyond-tech"].article.english.content,
   },
 ];
 ---
 
 <section class="space-y-6">
-  <h2>Beyond Tech</h2>
+  <h2>{t["beyond-tech"].heading}</h2>
   <div class="space-y-4">
     {
       articles.map((article) => (
         <article class="space-y-2">
           <div class="flex items-center gap-2">
-            <h3 class="font-semibold text-lg md:text-xl drop-shadow-lg drop-shadow-black/50">
+            <h3 class="font-bold text-lg md:text-xl drop-shadow-lg drop-shadow-black/50 ">
               {article.title}
             </h3>
             <span class="h-px flex-1 bg-text hidden lg:block" />
           </div>
-          <p>{article.content}</p>
+          <p class="text-pretty">{article.content}</p>
         </article>
       ))
     }

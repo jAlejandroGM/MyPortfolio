@@ -42,3 +42,20 @@ html.dark .icon-sun {
 html.dark .icon-moon {
   display: none;
 }
+
+html[lang="es"] .lang-en {
+  display: none;
+}
+html[lang="en"] .lang-es {
+  display: none;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+::selection {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+}

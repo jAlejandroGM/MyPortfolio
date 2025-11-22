@@ -1,0 +1,17 @@
+---
+const { t } = Astro.props;
+---
+
+<button
+  id="lang-toggle"
+  aria-label={t["lang-btn"].aria}
+  class="p-1.5 bg-secondary border-primary border-2 rounded-full cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300 shadow-lg shadow-black/40"
+>
+  <p class="lang-es text-text w-6">EN</p>
+  <p class="lang-en text-text w-6">ES</p>
+</button>
+
+<script>
+  import { initLangToggle } from "../../scripts/lang-toggle";
+  initLangToggle();
+</script>

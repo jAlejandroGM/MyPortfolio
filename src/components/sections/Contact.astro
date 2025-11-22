@@ -3,42 +3,47 @@ import Email from "../../icons/Email.astro";
 import Phone from "../../icons/Phone.astro";
 import LocationIcon from "../../icons/LocationIcon.astro";
 import LinksMenu from "../ui/LinksMenu.astro";
+
+const { t } = Astro.props;
 ---
 
 <section class="space-y-4">
-  <h2>Contact Me</h2>
+  <h2>{t.contact.heading}</h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-14 lg:gap-20">
     <div class="space-y-4">
       <p>
-        Estoy abierto a nuevas oportunidades. Si te interesa colaborar o
-        conversar, puedes contactarme aquí:
+        {t.contact.description}
       </p>
-      <ul class="space-y-2">
+      <ul class="space-y-2" aria-label="Información de contacto">
         <li class="flex gap-2">
-          <Phone class="size-6" /><span
-            class="drop-shadow-lg drop-shadow-black/50">+51 945 472 320</span
+          <Phone class="size-6" aria-hidden="true" /><span
+            class="drop-shadow-lg drop-shadow-black/50"
+            aria-label={t.contact.phone.aria}>+51 945 472 320</span
           >
         </li>
         <li class="flex gap-2">
-          <Email class="size-6" /><span
+          <Email class="size-6" aria-hidden="true" /><span
             class="drop-shadow-lg drop-shadow-black/50"
+            aria-label={t.contact.email.aria}
             >j.alejandro.guzman.m@gmail.com</span
           >
         </li>
         <li class="flex gap-2">
-          <LocationIcon class="size-6" /><span
-            class="drop-shadow-lg drop-shadow-black/50">Lima, Perú</span
+          <LocationIcon class="size-6" aria-hidden="true" /><span
+            class="drop-shadow-lg drop-shadow-black/50"
+            aria-label={t.contact.location.aria}
+            >{t.contact.location.display}</span
           >
         </li>
       </ul>
     </div>
-    <div class="flex flex-col items-center gap-4">
+    <div class="flex flex-col items-center gap-4 lg:gap-6">
       <img
-        class="size-32 lg:size-42 lg:-mt-12 bg-deep shadow-lg shadow-black/60"
+        class="size-32 lg:size-42 lg:-mt-12 bg-deep shadow-lg shadow-black/60 hover:scale-105 transition-all duration-300"
         src="/qrcode.svg"
-        alt="Whatsapp QR code"
+        alt={t.contact.qrcode.alt}
       />
-      <LinksMenu />
+      <LinksMenu t={t} />
     </div>
   </div>
 </section>

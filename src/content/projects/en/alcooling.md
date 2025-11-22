@@ -11,4 +11,4 @@ featured: true
 order: 3
 ---
 
-**_Corporate Website_** for a company specializing in radiators and cooling systems for trucks.
+**_Corporate Website_** for a truck radiator and cooling systems company.

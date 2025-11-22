@@ -95,7 +95,7 @@ export default {
   contact: {
     heading: "Contáctame",
     description:
-      "Estoy abierto a nuevas oportunidades. Si te interesa colaborar o conversar, puedes contactarme aquí:",
+      "Estoy abierto a nuevas oportunidades. Si te interesa colaborar o conversar, puedes encontrarme aquí:",
     list: {
       aria: "Información de contacto",
     },

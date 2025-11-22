@@ -1,8 +1,4 @@
 export default {
-  languageOption: {
-    es: "Español",
-    en: "Inglés",
-  },
   "lang-btn": {
     aria: "Cambiar idioma",
   },

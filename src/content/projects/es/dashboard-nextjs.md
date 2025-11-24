@@ -11,4 +11,4 @@ featured: true
 order: 4
 ---
 
-**_Proyecto académico_** del curso oficial de Next.js.
+**Proyecto académico** del curso oficial de Next.js.

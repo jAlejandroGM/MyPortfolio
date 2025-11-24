@@ -11,4 +11,4 @@ featured: true
 order: 1
 ---
 
-**_Landing Page_** para atelier de moda para damas.
+**Landing Page** para atelier de moda para damas.

@@ -24,8 +24,9 @@ export default {
   },
   "about-me": {
     heading: "About Me",
-    paragraph:
-      "Passionate about technology and everything I can build with it. I dive intensely into every project, aiming for flawless interfaces and solid functionality that reflect precise, meticulous work. I have a practical mindset and adapt quickly, which lets me refine every detail without losing momentum. My passion and desire to be the best at what I do push me to deliver maximum value in projects that challenge me and create real impact.",
+    p1: "After competing in the e-sports scene for over 7 years, where I had the chance to lead and coach pro teams, and even face some of the best players in the world, I decided to change direction and channel all that passion and enthusiasm into technology.",
+    p2: "I've spent almost a year <em>grinding</em> (working constantly and intensively) with code. After my initial studies at Cibertec and the 4Geeks Academy's intensive bootcamp, I've continued learning independently as I prepare to consolidate my Software Engineering path in 2026.",
+    p3: "I have a practical mindset and adapt quickly, which allows me to refine and improve every detail without losing momentum. I'm ready to take the next step and join a team where I can contribute with my value, intensity, and dedication.",
   },
   skills: {
     heading: "Tech Stack",

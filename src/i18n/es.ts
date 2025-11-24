@@ -24,8 +24,9 @@ export default {
   },
   "about-me": {
     heading: "Sobre Mi",
-    paragraph:
-      "Apasionado por la tecnología y por todo lo que puedo crear con ella. Me involucro intensamente en cada proyecto, busco crear interfaces impecables y funcionalidades sólidas que reflejen un trabajo preciso y meticuloso. Tengo un enfoque práctico y me adapto con rapidez, lo que me permite mejorar y pulir cada detalle sin perder ritmo. Mi pasión y el deseo de ser el mejor en lo que hago me impulsan a aportar el máximo valor en proyectos que me reten y generen un impacto real.",
+    p1: "Después de competir en el mundo de e-sports por más de 7 años, donde tuve la oportunidad de dirigir y coachear equipos, además de enfrentar a algunos de los mejores jugadores del mundo, decidí cambiar de rumbo para dedicarle toda mi pasión y entusiasmo a la tecnología.",
+    p2: "Llevo casi un año <em>grindeando</em> (trabajando de forma constante e intensa) con el código. Tras mis estudios iniciales en Cibertec y la bootcamp intensiva de 4Geeks Academy, continúo formándome de forma autodidacta mientras me preparo para mi consolidación en Ingeniería de Software este 2026.",
+    p3: "Considero que tengo un enfoque práctico y me adapto con rapidez, lo que me permite mejorar y pulir cada detalle sin perder ritmo. Estoy listo para dar el siguiente paso y sumarme a un equipo donde pueda aportar con mi valor, intensidad y dedicación.",
   },
   skills: {
     heading: "Tecnologías",

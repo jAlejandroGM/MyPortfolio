@@ -4,7 +4,13 @@ const { t } = Astro.props;
 
 <section class="space-y-2 md:space-y-6">
   <h2>{t["about-me"].heading}</h2>
-  <p class="leading-relaxed">
-    {t["about-me"].paragraph}
-  </p>
+  <article class="space-y-4">
+    <p class="leading-relaxed">
+      {t["about-me"].p1}
+    </p>
+    <p class="leading-relaxed" set:html={t["about-me"].p2} />
+    <p class="leading-relaxed">
+      {t["about-me"].p3}
+    </p>
+  </article>
 </section>

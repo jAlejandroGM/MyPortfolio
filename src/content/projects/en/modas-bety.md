@@ -11,4 +11,4 @@ featured: true
 order: 1
 ---
 
-**_Landing Page_** for a women's fashion atelier.
+**Landing Page** for a women's fashion atelier.

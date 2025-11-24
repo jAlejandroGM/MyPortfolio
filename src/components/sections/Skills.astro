@@ -10,10 +10,8 @@ import Javascript from "../../icons/logos/Javascript.astro";
 import Jest from "../../icons/logos/Jest.astro";
 import Nextjs from "../../icons/logos/Nextjs.astro";
 import PostgreSQL from "../../icons/logos/PostgreSQL.astro";
-import Postman from "../../icons/logos/Postman.astro";
 import Python from "../../icons/logos/Python.astro";
 import React from "../../icons/logos/React.astro";
-import SQLAlchemy from "../../icons/logos/SQLAlchemy.astro";
 import Tailwind from "../../icons/logos/Tailwind.astro";
 
 const logos = [
@@ -25,14 +23,12 @@ const logos = [
   { component: AstroIcon, name: "Astro" },
   { component: Bootstrap, name: "Bootstrap" },
   { component: Tailwind, name: "TailwindCSS" },
-  { component: Figma, name: "Figma" },
   { component: Python, name: "Python" },
   { component: Flask, name: "Flask" },
-  { component: SQLAlchemy, name: "SQLAlchemy" },
   { component: PostgreSQL, name: "PostgreSQL" },
-  { component: Postman, name: "Postman" },
   { component: Git, name: "Git" },
   { component: Jest, name: "Jest" },
+  { component: Figma, name: "Figma" },
 ];
 
 const { t } = Astro.props;
@@ -40,14 +36,15 @@ const { t } = Astro.props;
 
 <section class="flex flex-col gap-4 md:gap-8">
   <h2>{t.skills.heading}</h2>
-  <div
-    class="grid grid-cols-4 gap-6 justify-items-center md:justify-items-normal"
-  >
+  <div class="flex flex-wrap justify-center gap-6 lg:gap-10">
     {
       logos.map(({ component: Logo, name }) => (
-        <span title={name} class="inline-block">
+        <span
+          title={name}
+          class="flex justify-center items-center basis-1/6 lg:basis-1/10"
+        >
           <Logo
-            class="size-10 md:size-11 lg:size-12 hover:scale-120 transition-all duration-300 drop-shadow-lg drop-shadow-black/70"
+            class="size-10 md:size-12 hover:scale-110 transition-all duration-300 drop-shadow-lg drop-shadow-black/70"
             role="img"
             aria-label={name}
           />

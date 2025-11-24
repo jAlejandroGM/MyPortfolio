@@ -4,11 +4,11 @@ subtitle: Corporate Website
 image: /images/alcooling.webp
 category: frontend
 status: ongoing
-stack: [React, Bootstrap]
+stack: [React, Bootstrap, CSS]
 repo: https://github.com/jAlejandroGM/advancedline-cooling-web
 link: null
 featured: true
 order: 3
 ---
 
-**_Corporate Website_** for a truck radiator and cooling systems company.
+**Corporate Website** for a truck radiator and cooling systems company.

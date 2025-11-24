@@ -4,11 +4,11 @@ subtitle: Sitio Web Corporativo
 image: /images/alcooling.webp
 category: frontend
 status: ongoing
-stack: [React, Bootstrap]
+stack: [React, Bootstrap, CSS]
 repo: https://github.com/jAlejandroGM/advancedline-cooling-web
 link: null
 featured: true
 order: 3
 ---
 
-**_Sitio Web Corporativo_** para empresa de radiadores y sistemas de refrigeración para camiones.
+**Sitio Web Corporativo** para empresa de radiadores y sistemas de refrigeración para camiones.

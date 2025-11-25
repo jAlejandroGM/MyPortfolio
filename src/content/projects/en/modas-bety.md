@@ -6,7 +6,7 @@ category: frontend
 status: ongoing
 stack: [Astro, Javascript, TailwindCSS]
 repo: https://github.com/jAlejandroGM/modasbety-landingpage
-link: https://modas-bety-landingpage.vercel.app/
+link: https://modasbety.vercel.app/
 featured: true
 order: 1
 ---

@@ -3,7 +3,7 @@ title: Advanced Line Cooling
 subtitle: Sitio Web Corporativo
 image: /images/alcooling.webp
 category: frontend
-status: ongoing
+status: paused
 stack: [React, Bootstrap, CSS]
 repo: https://github.com/jAlejandroGM/advancedline-cooling-web
 link: null

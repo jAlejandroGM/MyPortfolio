@@ -3,7 +3,7 @@ title: Modas Bety
 subtitle: Landing Page
 image: /images/modas-bety.webp
 category: frontend
-status: ongoing
+status: completed
 stack: [Astro, Javascript, TailwindCSS]
 repo: https://github.com/jAlejandroGM/modasbety-landingpage
 link: https://modasbety.vercel.app/

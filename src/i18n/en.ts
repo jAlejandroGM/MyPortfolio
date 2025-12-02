@@ -28,6 +28,12 @@ export default {
     p2: "I've spent almost a year <em>grinding</em> (working constantly and intensively) with code. After my initial studies at Cibertec and the 4Geeks Academy's intensive bootcamp, I've continued learning independently as I prepare to consolidate my Software Engineering path in 2026.",
     p3: "I have a practical mindset and adapt quickly, which allows me to refine and improve every detail without losing momentum. I'm ready to take the next step and join a team where I can contribute with my value, intensity, and dedication.",
   },
+  "vibe-coding": {
+    heading: "Vibe Coding...?",
+    p1: "For me, AI isn't who does the work itself, it's my mentor with a circuit brain.",
+    p2: "As a self-taught developer, AI has been the key to breaking down technical barriers and shifting my learning curve from linear to exponential. It's not about letting it think instead of me, but using it as a copilot that accelerates my research and helps me digest official documentation much faster.",
+    p3: "I might not check every single box on a job description just yet, but my superpower is adaptability. I have the judgment, the foundation, and the tools: give me a computer, a goal, and a bit of time, and I will find the best solution.",
+  },
   skills: {
     heading: "Tech Stack",
   },
@@ -91,7 +97,7 @@ export default {
   contact: {
     heading: "Contact Me",
     description:
-      "I am open to new opportunities. If you are interested in collaborating or talking, you can find me here:",
+      "I am open to new opportunities. If you are interested in collaborating or connecting, you can find me here:",
     list: {
       aria: "Contact information",
     },

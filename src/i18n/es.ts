@@ -28,6 +28,12 @@ export default {
     p2: "Llevo casi un año <em>grindeando</em> (trabajando de forma constante e intensa) con el código. Tras mis estudios iniciales en Cibertec y la bootcamp intensiva de 4Geeks Academy, continúo formándome de forma autodidacta mientras me preparo para mi consolidación en Ingeniería de Software este 2026.",
     p3: "Considero que tengo un enfoque práctico y me adapto con rapidez, lo que me permite mejorar y pulir cada detalle sin perder ritmo. Estoy listo para dar el siguiente paso y sumarme a un equipo donde pueda aportar con mi valor, intensidad y dedicación.",
   },
+  "vibe-coding": {
+    heading: "¿Vibe Coding...?",
+    p1: "Para mí, la IA no es quien hace el trabajo, es mi mentor con cerebro de circuitos.",
+    p2: "Al ser autodidacta, la Inteligencia Artificial ha sido la pieza clave para derribar muros técnicos y convertir mi curva de aprendizaje de lineal a exponencial. No se trata de dejar que la máquina piense por mí, sino de usarla como un copiloto que acelera mi investigación y me ayuda a digerir la documentación oficial mucho más rápido.",
+    p3: "Quizás hoy no marque todas las casillas de una vacante, pero mi superpoder es la adaptabilidad. Tengo el criterio, la base y las herramientas: dame una computadora, un objetivo y un poco de tiempo, y encontraré la mejor solución.",
+  },
   skills: {
     heading: "Tecnologías",
   },

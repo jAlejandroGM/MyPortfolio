@@ -5,7 +5,7 @@ image: /images/alpha.webp
 category: fullstack
 status: ongoing
 stack: [React, Bootstrap, Python, Flask, PostgreSQL]
-repo: https://github.com/4GeeksAcademy/alpha
+repo: https://github.com/jAlejandroGM/alpha-legacy
 link: null
 featured: true
 order: 2

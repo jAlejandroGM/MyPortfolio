@@ -4,11 +4,11 @@ subtitle: Plataforma escolar
 image: /images/alpha.webp
 category: fullstack
 status: ongoing
-stack: [React, Bootstrap, Python, Flask, PostgreSQL]
+stack: [React, Vite, Bootstrap, Python, Flask, PostgreSQL]
 repo: https://github.com/jAlejandroGM/alpha-legacy
 link: null
 featured: true
-order: 2
+order: 3
 ---
 
 **Maqueta de plataforma escolar** diseñado para el manejo de notas, asistencias y horarios de alumnos y maestros.

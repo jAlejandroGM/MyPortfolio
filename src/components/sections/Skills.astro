@@ -8,10 +8,10 @@ import Git from "../../icons/logos/Git.astro";
 import HTML from "../../icons/logos/HTML.astro";
 import Javascript from "../../icons/logos/Javascript.astro";
 import Jest from "../../icons/logos/Jest.astro";
-import Nextjs from "../../icons/logos/Nextjs.astro";
 import PostgreSQL from "../../icons/logos/PostgreSQL.astro";
 import Python from "../../icons/logos/Python.astro";
 import React from "../../icons/logos/React.astro";
+import Supabase from "../../icons/logos/Supabase.astro";
 import Tailwind from "../../icons/logos/Tailwind.astro";
 
 const logos = [
@@ -19,12 +19,12 @@ const logos = [
   { component: CSS, name: "CSS" },
   { component: Javascript, name: "Javascript" },
   { component: React, name: "React" },
-  { component: Nextjs, name: "Next.js" },
   { component: AstroIcon, name: "Astro" },
   { component: Bootstrap, name: "Bootstrap" },
   { component: Tailwind, name: "TailwindCSS" },
   { component: Python, name: "Python" },
   { component: Flask, name: "Flask" },
+  { component: Supabase, name: "Supabase" },
   { component: PostgreSQL, name: "PostgreSQL" },
   { component: Git, name: "Git" },
   { component: Jest, name: "Jest" },
@@ -39,16 +39,16 @@ const { t } = Astro.props;
   <div class="flex flex-wrap justify-center gap-6 lg:gap-10">
     {
       logos.map(({ component: Logo, name }) => (
-        <span
-          title={name}
-          class="flex justify-center items-center basis-1/6 lg:basis-1/10"
-        >
+        <div class="flex flex-col justify-center items-center gap-2 basis-1/6 lg:basis-1/10 group">
           <Logo
-            class="size-10 md:size-12 hover:scale-110 transition-all duration-300 drop-shadow-lg drop-shadow-black/70"
+            class="size-10 md:size-12 group-hover:scale-110 transition-all duration-300 drop-shadow-lg drop-shadow-black/70"
             role="img"
             aria-label={name}
           />
-        </span>
+          <span class="text-xs md:text-sm font-medium text-center opacity-70 group-hover:opacity-100 transition-opacity">
+            {name}
+          </span>
+        </div>
       ))
     }
   </div>

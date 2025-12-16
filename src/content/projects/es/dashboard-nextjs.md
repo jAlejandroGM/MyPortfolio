@@ -7,7 +7,7 @@ status: paused
 stack: [Next.js, Typescript, TailwindCSS, PostgreSQL]
 repo: https://github.com/jAlejandroGM/Dashboard-Next.js-Course
 link: https://dashboard-next-js-course.vercel.app/
-featured: true
+featured: false
 order: 4
 ---
 

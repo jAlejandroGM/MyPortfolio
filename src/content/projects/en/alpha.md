@@ -3,7 +3,7 @@ title: alpha
 subtitle: School Platform
 image: /images/alpha.webp
 category: fullstack
-status: paused
+status: ongoing
 stack: [React, Vite, Bootstrap, Python, Flask, PostgreSQL]
 repo: https://github.com/jAlejandroGM/alpha
 link: null

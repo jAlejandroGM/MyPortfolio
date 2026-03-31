@@ -20,13 +20,13 @@ export default {
     aria: "Avatar de Alejandro Guzmán",
   },
   "main-info": {
-    title: "Desarrollador Web Fullstack",
+    title: "Desarrollador Full Stack",
   },
   "about-me": {
-    heading: "Sobre Mi",
-    p1: "Después de competir en el mundo de e-sports por más de 7 años, donde tuve la oportunidad de dirigir y coachear equipos, además de enfrentar a algunos de los mejores jugadores del mundo, decidí cambiar de rumbo para dedicarle toda mi pasión y entusiasmo a la tecnología.",
-    p2: "Llevo casi un año <em>grindeando</em> (trabajando de forma constante e intensa) con el código. Tras mis estudios iniciales en Cibertec y la bootcamp intensiva de 4Geeks Academy, continúo formándome de forma autodidacta mientras me preparo para mi consolidación en Ingeniería de Software este 2026.",
-    p3: "Considero que tengo un enfoque práctico y me adapto con rapidez, lo que me permite mejorar y pulir cada detalle sin perder ritmo. Estoy listo para dar el siguiente paso y sumarme a un equipo donde pueda aportar con mi valor, intensidad y dedicación.",
+    heading: "Sobre Mí",
+    p1: "Tras más de 7 años compitiendo en la élite de los e-sports, donde dirigí y entrené equipos y enfrenté a los mejores del mundo, decidí trasladar esa mentalidad estratégica a la tecnología. Me desempeño como desarrollador full stack con enfoque en frontend, combinando una ejecución visual impecable con una sólida capacidad para analizar flujos de negocio y asegurar la consistencia en la lógica de cada proceso.",
+    p2: "Llevo más de un año <em>grindeando</em> (trabajando de forma constante e intensa) con el código. Mi formación técnica en Cibertec y el bootcamp de 4Geeks Academy, sumados a mi actual carrera de Ingeniería de Software en la UTP, me han dado una base sólida que complemento constantemente de forma autodidacta.",
+    p3: "Cuento con experiencia en proyectos freelance y colaborativos, desde entornos formativos hasta productos escalables. Mantengo un enfoque práctico y me adapto con rapidez, lo que me permite mejorar y pulir cada detalle sin perder ritmo.",
   },
   "vibe-coding": {
     heading: "¿Vibe Coding...?",
@@ -57,7 +57,7 @@ export default {
   education: {
     heading: "Educación",
     description:
-      "Actualmente me encuentro estudiando de forma autodidacta, reforzando y ampliando los conocimientos que he adquirido durante mi formación académica, la cual es la siguiente:",
+      "Actualmente estoy cursando los primeros ciclos de Ingeniería de Software en la UTP, en paralelo, refuerzo mis conocimientos de manera autodidacta y desarrollo proyectos colaborativos y personales.",
     exp: {
       computacion: {
         title: "Computación e Informática (3 ciclos)",
@@ -70,7 +70,6 @@ export default {
       },
       ingenieria: {
         title: "Ingeniería de Software",
-        date: "Inicio: 03/2026",
       },
     },
   },
@@ -109,8 +108,8 @@ export default {
       aria: "Enviar correo a j.alejandro.guzman.m@gmail.com",
     },
     location: {
-      display: "Lima, Perú",
-      aria: "Ubicación Lima, Perú",
+      display: "Lima / Trujillo, Perú",
+      aria: "Ubicación en Lima o Trujillo, Perú",
     },
     qrcode: {
       alt: "Código QR para abrir conversación de WhatsApp",

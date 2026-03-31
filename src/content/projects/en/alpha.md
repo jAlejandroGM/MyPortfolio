@@ -8,7 +8,7 @@ stack: [React, Vite, Bootstrap, Python, Flask, PostgreSQL]
 repo: https://github.com/jAlejandroGM/alpha
 link: null
 featured: true
-order: 3
+order: 4
 ---
 
 **School platform mockup** designed for managing grades, attendance, and schedules for students and teachers.

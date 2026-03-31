@@ -20,13 +20,13 @@ export default {
     aria: "Avatar of Alejandro Guzmán",
   },
   "main-info": {
-    title: "Fullstack Web Developer",
+    title: "Full-Stack Developer",
   },
   "about-me": {
     heading: "About Me",
-    p1: "After competing in the e-sports scene for over 7 years, where I had the chance to lead and coach pro teams, and even face some of the best players in the world, I decided to change direction and channel all that passion and enthusiasm into technology.",
-    p2: "I've spent almost a year <em>grinding</em> (working constantly and intensively) with code. After my initial studies at Cibertec and the 4Geeks Academy's intensive bootcamp, I've continued learning independently as I prepare to consolidate my Software Engineering path in 2026.",
-    p3: "I have a practical mindset and adapt quickly, which allows me to refine and improve every detail without losing momentum. I'm ready to take the next step and join a team where I can contribute with my value, intensity, and dedication.",
+    p1: "After over 7 years competing at the top level of esports, where I led and coached teams and faced some of the best players in the world, I decided to bring that strategic mindset into technology. I work as a full-stack developer with a frontend focus, combining polished visual execution with a strong ability to analyze business flows and ensure consistency in the logic of each process.",
+    p2: "I've spent over a year <em>grinding</em> (working constantly and intensively) with code. My technical training at Cibertec and the 4Geeks Academy bootcamp, together with my current Software Engineering studies at UTP, have given me a solid foundation that I continuously strengthen through self-study.",
+    p3: "I have experience in freelance and collaborative projects, from educational environments to scalable product initiatives. I keep a practical mindset and adapt quickly, which allows me to refine and improve every detail without losing momentum.",
   },
   "vibe-coding": {
     heading: "Vibe Coding...?",
@@ -57,7 +57,7 @@ export default {
   education: {
     heading: "Education",
     description:
-      "I am currently studying independently, reinforcing and expanding the knowledge I have acquired during my academic formation, which is the following:",
+      "I am currently in the first terms of Software Engineering at UTP, in parallel, I continue strengthening my skills through self-study while developing collaborative and personal projects.",
     exp: {
       computacion: {
         title: "Computer Science & IT (3 terms)",
@@ -70,7 +70,6 @@ export default {
       },
       ingenieria: {
         title: "Software Engineering",
-        date: "Start: 03/2026",
       },
     },
   },
@@ -108,8 +107,8 @@ export default {
       aria: "Send email to j.alejandro.guzman.m@gmail.com",
     },
     location: {
-      display: "Lima, Peru",
-      aria: "Location Lima, Peru",
+      display: "Lima / Trujillo, Peru",
+      aria: "Location in Lima or Trujillo, Peru",
     },
     qrcode: {
       alt: "QR code to open WhatsApp conversation",

@@ -1,11 +1,11 @@
 ---
-const { t } = Astro.props;
+const { t, lang } = Astro.props;
 
 const experiences = [
   {
     title: t.education.exp.ingenieria.title,
     institution: "UTP",
-    date: t.education.exp.ingenieria.date,
+    date: lang === "en" ? "03/2026 - Present" : "03/2026 - Actualidad",
   },
   {
     title: t.education.exp.figma.title,

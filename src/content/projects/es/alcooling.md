@@ -7,7 +7,7 @@ status: paused
 stack: [React, Bootstrap, CSS]
 repo: https://github.com/jAlejandroGM/advancedline-cooling-web
 link: null
-featured: true
+featured: false
 order: 4
 ---
 

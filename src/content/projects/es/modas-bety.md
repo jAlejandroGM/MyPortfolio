@@ -8,7 +8,7 @@ stack: [Astro, Javascript, TailwindCSS]
 repo: https://github.com/jAlejandroGM/modasbety-landingpage
 link: https://modasbety.vercel.app/
 featured: true
-order: 2
+order: 3
 ---
 
 **Landing Page** de alto rendimiento con UX/UI personalizada para atelier de moda para damas.

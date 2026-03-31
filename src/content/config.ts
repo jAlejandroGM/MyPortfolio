@@ -8,7 +8,7 @@ const projects = defineCollection({
     category: z.enum(["frontend", "backend", "fullstack"]),
     status: z.enum(["paused", "ongoing", "completed"]),
     stack: z.array(z.string()),
-    repo: z.string().url(),
+    repo: z.string().url().nullable(),
     link: z.string().url().nullable(),
     featured: z.boolean().default(false),
     order: z.number().optional(),
